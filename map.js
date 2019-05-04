@@ -3,7 +3,7 @@
 //indexes in maps are unique
 
 var newMap = new Map();
-newMap.set('name', 'Ivan'); 
+newMap.set('name', 'Ivan');
 newMap.set('id', 123);
 newMap.set('drinks', ['rakija', 'pivo', 'bazga']);
 newMap.set(NaN, 'No value'); //beacuse indexes are unique
@@ -17,3 +17,13 @@ console.log(name); // Ivan
 console.log(id); // 123
 console.log(drinks); // ['1', '2', '3']
 console.log(nan); //No value
+
+//useful methods
+console.log(newMap.size);
+console.log(newMap.keys());
+console.log(newMap.values());
+
+//iterate keys and values together seperatly in map
+for (let [key, value] of newMap) {
+    console.log(key + " - " + value);
+}

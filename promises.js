@@ -21,13 +21,13 @@ var params = {
     method: 'GET',
     path: '/api',
     headers: {
-        "User-Agent": "promises"  // Your Github ID or application name
+        "User-Agent": "promises" //it can be anything, name of your app for example
     }
 };
 
 var apicall = new Promise(function (resolve, reject) {
     var req = https.request(params, (res) => {
-        console.log(`statusCode: ${res.statusCode}`)
+        console.log(`Status code: ${res.statusCode}`)
         if (res.statusCode == 200) {
             var data = [];
             res.on('data', (d) => {
@@ -42,12 +42,10 @@ var apicall = new Promise(function (resolve, reject) {
                 resolve(data);
             });
         } else {
-            console.log("reson wrong status code");
             reject(res.statusCode);
         }
     })
     req.on('error', (error) => {
-        console.log("reson error");
         reject(error);
     })
     req.end();

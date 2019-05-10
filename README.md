@@ -9,3 +9,15 @@ Repetition of ES6 features in form of code examples with comments:
 - **set.js**: set structure
 - **spread.js**: spread operator
 - **static.js**: static methods
+- **array_filter.js**: array filters
+- **array_map.js**: array map
+- **array_reduce.js**: array reduce
+- **async.js**: async functions
+- **await.js**: await keywoard
+- **destructing.js**: destructing array and objects
+- **exported.js**: helper file for .js bellow
+- **import_exports.js**: import and export keyword, doesnt work with regular nodejs, see comments for workaround in node or just run in index.html script
+- **extend_super.js**: extend keyword and super method
+- **promises.js**: promises
+- **template_literal.js**: template literals
+- **yield.js**: generator functions
